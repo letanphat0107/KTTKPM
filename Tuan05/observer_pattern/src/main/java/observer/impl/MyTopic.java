@@ -19,7 +19,6 @@ public class MyTopic implements Subject {
     public void register(Observer obj) {
         if (obj == null) throw new NullPointerException("Null Observer");
         if (!observers.contains(obj)) observers.add(obj);
-
     }
 
     @Override
