@@ -10,7 +10,6 @@ spring:
           uri: lb://payment-service
           predicates:
             - Path=/api/payments/**
-        # Thêm inventory, shipping tương tự
         - id: inventory-service
           uri: lb://inventory-service
           predicates:
